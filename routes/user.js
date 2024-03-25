@@ -9,4 +9,12 @@ route.get("/", UserController.GetAllUsers)
 
 route.get("/add", UserController.CreateUser)
 
+route.post("/register", UserController.Register)
+
+route.post("/login", UserController.Login)
+
+route.put("/:id", UserController.Update)
+
+route.delete("/:id", UserController.Delete)
+
 module.exports = route
